@@ -13,7 +13,7 @@ st.write("Upload your lecture audio and whiteboard snapshot to generate revision
     #st.header("Configuration")
     #api_key = st.text_input("Enter Gemini API Key", type="password")
     #st.caption("Get your key at [Google AI Studio](https://aistudio.google.com/)")
-    api_key = st.secrets["GEMINI_API_KEY"]
+api_key = st.secrets["GEMINI_API_KEY"]
 
 # File Uploaders
 audio_file = st.file_uploader("Upload Lecture Audio (.mp3, .wav)", type=["mp3", "wav", "m4a"])
